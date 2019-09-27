@@ -17,7 +17,7 @@ RSpec.describe 'events/show.html.erb' do
 
     it 'displays the page correctly' do
       render
-      expect(rendered).to include event.title
+      expect(rendered).to include CGI.escapeHTML(event.title)
     end
   end
 end

@@ -46,6 +46,7 @@ Metrics/LineLength:
 
 AllCops:
   Exclude:
+    - 'node_modules/**/*'
     - 'uploads/**/*'
     - 'bin/**/*'
     - 'script/**/*'
@@ -53,5 +54,6 @@ AllCops:
     - 'public/**/*'
     - 'tmp/**/*'
     - 'db/**/*'
+    - 'vendor/**/*'
 
 inherit_from: .rubocop_todo.yml
